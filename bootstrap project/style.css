@@ -1,0 +1,108 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --brand: #0d6efd;
+  --brand-strong: #0847c9;
+  --bg-soft: #f4f7ff;
+  --surface: #ffffff;
+  --surface-muted: #f8f9ff;
+  --text-muted: #6c757d;
+}
+
+body {
+  background: var(--bg-soft);
+  color: #202940;
+  padding-top: 72px;
+}
+
+.navbar {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+}
+
+.hero {
+  min-height: 86vh;
+  background: linear-gradient(180deg, rgba(13, 110, 253, 0.88), rgba(13, 110, 253, 0.65)), url('slide/slide01.jfif') center/cover no-repeat;
+  color: #ffffff;
+}
+
+.hero .display-4 {
+  letter-spacing: -0.05em;
+}
+
+.section-heading {
+  letter-spacing: -0.02em;
+}
+
+.card-hero {
+  min-height: 240px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.15rem;
+}
+
+.feature-card,
+.contact-card,
+.service-card {
+  border: none;
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover,
+.contact-card:hover,
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 55px rgba(15, 23, 42, 0.12);
+}
+
+.section-light {
+  background: #ffffff;
+}
+
+.section-soft {
+  background: rgba(13, 110, 253, 0.05);
+}
+
+.btn-brand {
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--brand-strong);
+  border-color: var(--brand-strong);
+}
+
+footer {
+  color: #6c757d;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--brand);
+}
+
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 64vh;
+    padding-top: 2rem;
+  }
+}
